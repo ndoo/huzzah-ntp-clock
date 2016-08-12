@@ -2,11 +2,11 @@
 
 Adafruit Feather Huzzah + 7seg FeatherWing NTP clock
 
-## Caveats/Design Decision
+## Caveats/Design Decisions
 
 * ESP8266 goes into Deep Sleep between per-minute updates
-* Clock may go out of sync in between NTP updates (configurable via variable ntpInterval)
 * Clock may go out of sync during Deep Sleep (configurable via variable espOffset)
+* Clock may go out of sync in between NTP updates (configurable via variable ntpInterval)
 * Clock requires shorting of GPIO16 to RST for wake from Deep Sleep
 
 ## Possible feature additions
